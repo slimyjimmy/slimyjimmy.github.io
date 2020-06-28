@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <body>
+  <body onCreate="addNumberOfVisitors()">
     <h1>Mooinn, Meister</h1>
     <iframe src="https://giphy.com/embed/fnuSiwXMTV3zmYDf6k" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
     </br></br></br></br></br></br></br></br></br></br></br>
-<p>Besucher counter: 98797992. Besucher</p>
+<p id="numberOfVisitors"></p>
+
+
+<script>
+  function addNumberOfVisitors() {
+    var p_numberOfVisitors = document.findElementById('numberOfVisitors');
+    p_numberOfVisitors.innerHTML = "moin";
+  }
+</script>
   </body>
 </html>
