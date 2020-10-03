@@ -1,9 +1,57 @@
-body {
-    background-color: black;
+#bootstrap-overrides a {
+    padding: 1rem;
+    color: black;
+    transition: ease 2s;
 }
 
-#bootstrap-overrides a {
-    color: #1ec503;
+#bootstrap-overrides a, h1, h2 {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+#bootstrap-overrides h1, h2 {
+    margin-top: 1rem;
+}
+
+#bootstrap-overrides a::first-letter, h1::first-letter, h2::first-letter {
+    text-decoration: underline;
+    text-decoration-color: #e2001a;
+}
+
+#bootstrap-overrides a.navbar-brand::first-letter {
+    text-decoration: none;
+}
+
+#bootstrap-overrides h2 {
+    font-size: large;
+}
+
+#bootstrap-overrides a, h1, h2 {
+    text-transform: uppercase;
+}
+
+#bootstrap-overrides a:hover {
+    text-decoration: none;
+    background-color: #e2001a;
+    transition: ease 2s;
+}
+
+#bootstrap-overrides .navbar-brand {
+    font-size: x-large;
+}
+
+.about {
+    text-align: center;
+}
+
+.about ul {
+    list-style: none;
+    margin: 3rem 0 1rem 0;
+    padding: 0;
+}
+
+.about li {
+    display: inline;
+    margin: 3rem 0 1rem 0;
 }
 
 /* Hamburger navhbar toggler */
@@ -12,25 +60,12 @@ body {
 }
 
 .custom-toggler.navbar-toggler {
-  border-color:  #1ec503;
-}
-
-#profilePictureContainer {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: auto;
-  width: 40%;
+  border-color:  primary;
 }
 
 #profilePictureContainer > img {
     border-radius: 50%;
-    width: 20rem;
-}
+    width: 17rem;
 
-footer ::before {
-    display: block;
-    content: '';
-    background:#1ec503;
-    height: 1px;
+box-sizing: inherit;
 }
