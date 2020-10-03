@@ -1,4 +1,36 @@
 body {
     background-color: black;
+}
+
+#bootstrap-overrides a {
     color: #1ec503;
+}
+
+/* Hamburger navhbar toggler */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(30, 197, 3, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color:  #1ec503;
+}
+
+#profilePictureContainer {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: auto;
+  width: 40%;
+}
+
+#profilePictureContainer > img {
+    border-radius: 50%;
+    width: 20rem;
+}
+
+footer ::before {
+    display: block;
+    content: '';
+    background:#1ec503;
+    height: 1px;
 }
