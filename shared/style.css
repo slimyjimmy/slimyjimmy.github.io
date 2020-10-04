@@ -4,8 +4,12 @@
     transition: ease 2s;
 }
 
-#bootstrap-overrides a, h1, h2 {
-    font-family: 'Share Tech Mono', monospace;
+body#bootstrap-overrides #center-col {
+    margin-left: 110px;
+}
+
+#bootstrap-overrides {
+    font-family: 'Share Tech Mono', monospace !important;
 }
 
 #bootstrap-overrides h1, h2 {
@@ -69,3 +73,48 @@
 
 box-sizing: inherit;
 }
+
+.flag-emoji {
+    width: 30px;
+    margin-right: 5px;
+}
+
+img.germany-flag {
+    content: url("/resources/flag_germany.png");
+}
+
+img.hk-flag {
+    content: url("/resources/flag_hk.png");
+}
+
+.minimalistic {
+    background-color: white;
+    border: none;
+    margin: 0.1rem;
+}
+
+.active {
+    text-decoration: underline;
+    text-decoration-color: #e2001a;
+}
+
+button.active {
+    text-decoration: none;
+    background-color: #00BEC2;
+}
+
+.minimalistic.vl {
+    border-left: 2px solid grey;
+    height: 50px;
+    content: '';
+    margin-right: 10px;
+}
+
+.minimalistic.vl.active {
+    border-left: 2px solid #e2001a;
+}
+
+/* .vl {
+    border-left: 2px solid green;
+    height: 40px; 
+  } */

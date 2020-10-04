@@ -1,82 +1,41 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- for bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
-  <!-- bootstrap end -->
-  <link rel="stylesheet" type="text/css" href="./shared/style.css" />
-  <!-- font -->
-  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <head>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script> 
+$(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script> 
 </head>
 
+
 <body id="bootstrap-overrides">
-  <div>
+<div id="header"></div>
+<!--Remaining section-->
 
-    <div>
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand primary-color" href="#">👨‍💻</a>
-        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
-          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="experiences.html">Experiences</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="skills.html">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.instagram.com/bein_tumor/?hl=de">Dank memes</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-
-    <div class="about">
-      <div id="profilePictureContainer" class="center">
-        <img src="resources/nowak.JPG" title="Hallo :)">
-      </div>
-
-      <div>
-        <h1>Djimon Nowak</h1>
-        <h2>Junior Software Engineer at Wortmann Schuh-Holding KG.</h2>
-        <ul>
-          <li><a class="underline--magical" href="https://github.com/slimyjimmy">GitHub</a></li>
-          <li><a class="underline--magical" href="https://stackoverflow.com/users/10758800/jimmy">StackOverflow</a></li>
-          <li><a class="underline--magical" href="https://de.linkedin.com/in/djimon-nowak-54b317184">LinkedIn</a></li>
-        </ul>
-      </div>
-    </div>
-
-
-    <div>
-      <footer class="footer fixed-bottom">
-        <div> .</div>
-      </footer>
-    </div>
+<div class="about">
+  <div id="profilePictureContainer" class="center">
+    <img src="resources/nowak.JPG" title="Hallo :)">
   </div>
+
+  <div>
+    <h1>Djimon Nowak</h1>
+    <h2>Junior Software Engineer at Wortmann Schuh-Holding KG.</h2>
+    <ul>
+      <li><a class="underline--magical" href="https://github.com/slimyjimmy">GitHub</a></li>
+      <li><a class="underline--magical" href="https://stackoverflow.com/users/10758800/jimmy">StackOverflow</a></li>
+      <li><a class="underline--magical" href="https://de.linkedin.com/in/djimon-nowak-54b317184">LinkedIn</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<div id="footer"></div>
 </body>
-
-<script>
-
-</script>
+</html>
